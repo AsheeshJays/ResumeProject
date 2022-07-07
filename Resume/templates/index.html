@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content  %}
+ 
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'image/pic.jpg' %}" alt="profilepic" class="img-thumbnail"
+         width="250px" height="130px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold fon">Hello,</h1>
+        <div class="px-4" style="line-height: 2rem;">
+             <p class="text-indent:100px;">I am <b class="text-warning">Asheesh kumar Jaysawal</b> having 1 year of full stack 
+                  web-devlopment experince Python & Django developer. Working on some project on Django Rest Framework. 
+                  and Freelancer 
+             </p>
+        </div>
+   </div>
+   <div class="text-center">
+    <a href="" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="" class="btn btn-outline-info my-3 ">Contact</a>
+    </h5>
+</div>
+</div>
+
+{% endblock  %}

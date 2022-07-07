@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Resume | Contact</title>
+{% endblock %}
+{% block content %}
+   <div class="container mt-5">
+          <h1 class="text-warning mb-5 border-bottom">CONTACT</h1>
+          <div class="row text-white mt-5">
+          <p class="mx-auto mb-5 fon">
+               Do you Have Any Questions? Please do not hesitate to Conatct. I will come 
+               back to you within a matter of hours to help you.
+          </p>
+          <div class="col-sm-9 mb-5">
+               <form action="" method ="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                         <div class="form-group col-md-6">
+                              <label for="inputName" class="i-colo">Your Name</label>
+                              <input type="text" class="form-control" name="name" id="inputName"/>
+                         </div>
+                         <div class="form-group col-md-6">
+                              <label for="inputEmail"  class="i-colo">Your Email</label>
+                              <input type="email" class="form-control" name="email"  id="inputEmail"/>
+                         </div>
+                    </div>
+                    <div class="form-group">
+                         <label for="inputSubject"  class="i-colo">Your Subject</label>
+                         <input type="text" class="form-control" name="subject" id="inputSubject"/>
+                    </div>
+                    <div class="mb-3">
+                         <label for="inputTextArea"  class="i-colo">Your Mesage *</label>
+                         <textarea class="form-control" rows="5" name="message" id="inputTextarea" required></textarea>
+                         
+                    </div>
+                    <button class="btn btn-primary " type="submit">Send</button>
+               </form>
+          </div>
+          <div class="col-sm-3 text-center">
+               <ul class="list-unstyled">
+                    <li>
+                         <i class="fas fa-map-marker-alt fa-2x i-colo"></i>
+                         <p class="fon">Mau, Uttar Pardesh India</p>
+                    </li>
+                    <li>
+                         <i class="fas fa-phone mt-4 fa-2x i-colo"></i>
+                         <p class="fon">+917985202257</p>
+                    </li>
+                    <li>
+                         <i class="fas fa-envelope mt-4 fa-2x i-colo"></i>
+                         <p class="fon">contact@gmail.com</p>
+                    </li>
+               </ul>
+          </div>
+          </div>
+     </div>
+{% endblock content %}
